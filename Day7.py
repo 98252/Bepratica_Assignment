@@ -1,19 +1,7 @@
 # ==============================================================================
 # SECTION 8: STUDENT GRADED LAB ASSIGNMENT — BEHAVIORAL CUSTOMER SEGMENTATION
 # ==============================================================================
-"""
-🎓 STUDENT LAB INSTRUCTIONS:
-Perform a behavioral segmentation using 3 specific behavioral features:
-  1. `Total_Transactions`
-  2. `Avg_Order_Value`
-  3. `Web_Engagement_Score`
 
-MANDATORY TASKS:
-1. Scale the 3 selected features using StandardScaler.
-2. Fit a K-Means model with K=3 (random_state=42).
-3. Compute the Silhouette Score for this 3-cluster behavioral model.
-4. Profile the 3 clusters and assign a short business title to each in the dictionary below.
-"""
 
 import os
 import sys
@@ -52,10 +40,6 @@ print(f"✅ Successfully loaded '{DATA_FILE}' from disk.")
 print(f"Dataset Dimensions: {df_customers.shape[0]} customers × {df_customers.shape[1]} features\n")
 print("First 3 Records:")
 display(df_customers.head(3))
-
-# ------------------------------------------------------------------------------
-# STUDENT WORKSPACE (SOLUTION)
-# ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
 # 1. Feature selection and scaling
